@@ -1,13 +1,20 @@
-<div>
-  <a href="/#/">< Back to list of videos</a>
-  <p1>{{detail.snippet.title}}</p1></a>
-  {{video.snippet.publishedAt | date:'mediumDate'}}
-  <iframe id="ytplayer" type="text/html" width="640" height="390"
-    ng-src="{{videoUrl}}"
-    frameborder="0" />
-
-  <p>
-    {{detail.snippet.description}}
-  </p>
-  {{detail}}
+<div class="container">
+  <div class="row">
+    <a href="/#/">< Back to list of videos</a>
+    <p1>{{detail.snippet.title}}</p1></a>
+    <p3>Published on {{video.snippet.publishedAt | date:'mediumDate'}}</p3>
+  </div>
+  <div class="row">
+    <div class="col-sm-7 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="ytplayer" type="text/html" width="640" height="390" ng-src="{{videoUrl}}" frameborder="0" />
+      </div>
+    </div>
+    <div class="col-sm-5 col-xs-12">
+      <p>
+        {{detail.snippet.description}}
+      </p>
+      {{detail}}
+    </div>
+  </div>
 </div>

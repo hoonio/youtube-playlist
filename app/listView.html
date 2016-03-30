@@ -1,11 +1,14 @@
 <div class="container">
   <h1>{{name}}</h1>
-  <div class="row">
-    <div class="col-sm-3" ng-repeat="video in feed">
-      <a href="/#/{{video.snippet.resourceId.videoId}}">{{video.snippet.title}}</a>
-      <img src="{{video.snippet.thumbnails.medium.url}}" / />
-      {{video.snippet.publishedAt | date:'mediumDate'}}
-
+  <div class="row" ng-repeat="video in feed">
+    <div class="col-sm-7 col-xs-12">
+      <a href="/#/{{video.snippet.resourceId.videoId}}">
+        <img class="img-responsive" src="{{video.snippet.thumbnails.medium.url}}" />
+      </a>
+    </div>
+    <div class="col-sm-5 col-xs-12">
+      <h2><a href="/#/{{video.snippet.resourceId.videoId}}">{{video.snippet.title}}</a></h2>
+      <h3>Published on {{video.snippet.publishedAt | date:'mediumDate'}}</h3>
       <p>
         {{video.snippet.description | limitTo: descriptionLimit}}<span ng-show="{{video.snippet.description.length > descriptionLimit}}">...</span>
       </p>
