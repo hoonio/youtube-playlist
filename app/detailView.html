@@ -2,11 +2,12 @@
   <a href="/#/">< Back to list of videos</a>
   <p1>{{detail.snippet.title}}</p1></a>
   {{video.snippet.publishedAt | date:'mediumDate'}}
+  <iframe id="ytplayer" type="text/html" width="640" height="390"
+    ng-src="{{videoUrl}}"
+    frameborder="0" />
 
-
-  <img src="{{detail.snippet.thumbnails.medium.url}}" / />
   <p>
     {{detail.snippet.description}}
-
+  </p>
   {{detail}}
 </div>
