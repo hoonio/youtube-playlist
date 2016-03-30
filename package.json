@@ -4,6 +4,7 @@
   "description": "Beyond Frontend Developer Task",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "test": "protractor protractor.conf.js"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/hoonio/beyond#readme",
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^6.2.0"
   }
 }
