@@ -7,7 +7,7 @@ var app = express();
 app.set('port', process.env.PORT || 8080);
 app.use(express.static(__dirname + '/'));
 
-app.get('/', function(request, response) {
+app.get('/*', function(request, response) {
   var data = fs.readFileSync('index.html').toString();
   response.send(data);
 });
