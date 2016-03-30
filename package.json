@@ -1,0 +1,26 @@
+{
+  "name": "beyond",
+  "version": "1.0.0",
+  "description": "Beyond Frontend Developer Task",
+  "main": "app.js",
+  "scripts": {
+    "test": "protractor protractor.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoonio/beyond.git"
+  },
+  "keywords": [
+    "YouTube",
+    "Angular"
+  ],
+  "author": "Hoonio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoonio/beyond/issues"
+  },
+  "homepage": "https://github.com/hoonio/beyond#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
