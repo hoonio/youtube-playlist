@@ -2,10 +2,13 @@
   <h1>{{name}}</h1>
   <div class="row">
     <div class="col-sm-3" ng-repeat="video in feed">
-      <a href="#/video/{{video.snippet.resourceId.videoId}}">{{video.snippet.title}}</a>
+      <a href="/#/{{video.snippet.resourceId.videoId}}">{{video.snippet.title}}</a>
       <img src="{{video.snippet.thumbnails.medium.url}}" / />
       {{video.snippet.publishedAt | date:'mediumDate'}}
-      {{video.snippet.description}}
+
+      <p>
+        {{video.snippet.description | limitTo: descriptionLimit}}<span ng-show="{{video.snippet.description.length > descriptionLimit}}">...</span>
+      </p>
     </div>
   </div>
 </div>

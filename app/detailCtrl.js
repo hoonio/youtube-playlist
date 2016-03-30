@@ -1,5 +1,6 @@
-angular.module('app').controller('DetailCtrl', ['$scope',
-  function($scope) {
-    console.log('processing detail view')
+app.controller('DetailCtrl', ['$scope', 'videos', '$routeParams',
+  function($scope, videos, $routeParams) {
+    console.log('processing detail view' + $routeParams.videoid)
     $scope.name = "My YouTube Playlist";
+    $scope.detail = videos.detail($routeParams.videoid)
 }]);

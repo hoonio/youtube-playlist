@@ -14,7 +14,15 @@ angular.module('app').factory('videos', ['$http', function($http) {
 
   o.detail = function(id) {
     console.log(id + ' requested')
-    return o.list[0]
+    console.log(o.feed)
+    let selectedVideo
+    o.feed.map((video) => {
+      console.log('comparing ' + video + id)
+      if (video.snippet.resourceId.videoId == id) {
+        selectedVideo = video
+      }
+    })
+    return selectedVideo
   };
 
   return o;
