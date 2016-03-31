@@ -13,7 +13,7 @@ angular.module('app').factory('videos', ['$http', function($http) {
   };
 
   o.detail = function(id) {
-    let selectedVideo
+    var selectedVideo;
     o.feed.map((video) => {
       if (video.snippet.resourceId.videoId == id) {
         selectedVideo = video
