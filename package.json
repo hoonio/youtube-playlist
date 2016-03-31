@@ -23,5 +23,10 @@
   "homepage": "https://github.com/hoonio/beyond#readme",
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-ruby-sass": "^2.0.6"
   }
 }
