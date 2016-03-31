@@ -1,6 +1,10 @@
 # youtube-playlist
 Displays YouTube playlist
 
-Run `npm install` to install dependencies
+`npm install` to install dependencies
 
-Run `npm start` to serve on http://localhost:8080
+`npm start` to serve on http://localhost:8080
+
+`npm test` for testing, requires protractor installed globally
+
+`gulp styles` for CSS compilation *watch/livereload not yet added*
