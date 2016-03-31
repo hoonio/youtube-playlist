@@ -24,4 +24,6 @@ exports.config = {
   },
 
   framework: 'jasmine',
+  
+  jasmineNodeOpts: {isVerbose: true}
 };
