@@ -2,24 +2,36 @@ $title-color: #5E5E5E;
 $text-color: #868686;
 
 body {
-  background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
 .list-view {
   .video-item {
-    margin: 1rem 0;
+    margin: 5px 0;
+    padding: 18px 10px;
+    border: 1px solid #333;
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
   }
 }
 
-h1, h2 {
+.detail-view {
+}
+
+.date {
+  font-size: 15px;
+}
+
+h1, h2, .title {
   color: $title-color;
   a {
     color: $title-color;
   }
 }
 
-p {
+.description, .date {
   color: $text-color;
 }

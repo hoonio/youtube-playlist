@@ -1,16 +1,16 @@
-<div class="container">
+<div class="container detail-view">
   <div class="row">
-    <a href="#/">< Back to list of videos</a>
+    <a class="back-to-list" href="#/">< Back to list of videos</a>
   </div>
   <div class="row">
-    <h1>{{detail.snippet.title}}</h1>
+    <h1 class="title">{{detail.snippet.title}}</h1>
   </div>
   <div class="row">
-    <h3>Published on {{detail.snippet.publishedAt | date:'mediumDate'}}</h3>
+    <h3 class="date">Published on {{detail.snippet.publishedAt | date:'mediumDate'}}</h3>
   </div>
   <div class="row">
     <div class="col-sm-5 col-xs-12 pull-right">
-      <p>{{detail.snippet.description}}</p>
+      <p class="description">{{detail.snippet.description}}</p>
     </div>
     <div class="col-sm-7 col-xs-12">
       <div class="embed-responsive embed-responsive-16by9">

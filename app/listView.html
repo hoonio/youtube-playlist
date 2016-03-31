@@ -1,5 +1,5 @@
 <div class="container list-view">
-  <h1>{{name}}</h1>
+  <h1 class="site-heading">{{name}}</h1>
   <div class="row video-item" ng-repeat="video in feed">
     <div class="col-sm-7 col-xs-12">
       <a href="#/{{video.snippet.resourceId.videoId}}">
@@ -7,9 +7,9 @@
       </a>
     </div>
     <div class="col-sm-5 col-xs-12">
-      <h2><a href="#/{{video.snippet.resourceId.videoId}}" class="title-link">{{video.snippet.title}}</a></h2>
-      <h4>Published on {{video.snippet.publishedAt | date:'mediumDate'}}</h4>
-      <p>
+      <h2 class="title"><a href="#/{{video.snippet.resourceId.videoId}}" class="title-link">{{video.snippet.title}}</a></h2>
+      <h4 class="date">Published on {{video.snippet.publishedAt | date:'mediumDate'}}</h4>
+      <p class="description">
         {{video.snippet.description | limitTo: descriptionLimit}}<span ng-show="{{video.snippet.description.length > descriptionLimit}}">...</span>
       </p>
     </div>
