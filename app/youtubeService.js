@@ -14,7 +14,7 @@ angular.module('app').factory('videos', ['$http', function($http) {
 
   o.detail = function(id) {
     var selectedVideo;
-    o.feed.map((video) => {
+    o.feed.map(function(video) {
       if (video.snippet.resourceId.videoId == id) {
         selectedVideo = video
       }
