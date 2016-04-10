@@ -1,5 +1,5 @@
 {
-  "name": "beyond",
+  "name": "YoutubePlaylist",
   "version": "1.0.0",
   "description": "Beyond Frontend Developer Task",
   "main": "app.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoonio/beyond.git"
+    "url": "git+https://github.com/hoonio/youtube-playlist.git"
   },
   "keywords": [
     "YouTube",
@@ -18,9 +18,9 @@
   "author": "Hoonio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hoonio/beyond/issues"
+    "url": "https://github.com/hoonio/youtube-playlist/issues"
   },
-  "homepage": "https://github.com/hoonio/beyond#readme",
+  "homepage": "https://github.com/hoonio/youtube-playlist#readme",
   "dependencies": {
     "express": "^4.13.4"
   },

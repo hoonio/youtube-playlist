@@ -11,6 +11,8 @@ exports.config = {
     'tests/app.spec.js'
   ],
 
+  rootElement: 'body',
+
   // loading Chrome Canary, add other browser path for cross-browser testing
   capabilities: {
     'browserName': 'chrome',
@@ -22,4 +24,6 @@ exports.config = {
   },
 
   framework: 'jasmine',
+  
+  jasmineNodeOpts: {isVerbose: true}
 };
