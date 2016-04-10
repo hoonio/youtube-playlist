@@ -1,5 +1,5 @@
 angular.module('app').factory('videos', ['$http', function($http) {
-  var url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails,status&maxResults=10&playlistId=PLSi28iDfECJPJYFA4wjlF5KUucFvc0qbQ&key=AIzaSyCuv_16onZRx3qHDStC-FUp__A6si-fStw'
+  var url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails,status&maxResults=20&playlistId=PLgAYBotgcdrwkLrZTSfYqdep_DR8qFoIA&key=AIzaSyCuv_16onZRx3qHDStC-FUp__A6si-fStw'
 
   var o = {
     feed: []
